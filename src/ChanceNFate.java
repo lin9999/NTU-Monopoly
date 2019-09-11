@@ -1,5 +1,5 @@
-import java.util.Random;
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * This is the ChanceNFate class, which is to generate kinds of event when player got to "CHANCE". 
@@ -12,13 +12,13 @@ public class ChanceNFate {
 	// =============== VARIABLES ===============
 	private Random r;
 	private String text; // used to show the message
-	private ArrayList<Event> eventList = new ArrayList<Event>();
+	private ArrayList<Event> eventList;
 	// =========================================
 	
 	public ChanceNFate() {
 		r = new Random();
 		text = "";
-		eventList = null;
+		eventList = new ArrayList<Event>();
 	}
 	
 	/**
